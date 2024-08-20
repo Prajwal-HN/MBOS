@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: curd-master
+  datasource:
+    url: jdbc:mysql://localhost:3306/TESTDB?useSSL=false&serverTimezone=UTC
+    username: root
+    password: Prajwal@
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL8Dialect
+
+weather:
+  info:
+    url: https://api.openweathermap.org/data/2.5/weather
+    api:
+      key: c2099fe9d2e735068e852c48153ce514
+
+
+logging:
+  file:
+    name: /Users/prajwalshetty/Desktop/log-file/spring.log #log file path
+    max-size: 10MB #log file size
+    max-history: 10 #latest number of log files
+
